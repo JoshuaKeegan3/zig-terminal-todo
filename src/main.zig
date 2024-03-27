@@ -194,7 +194,13 @@ pub fn main() !void {
                 }
                 try tty.writer().writeAll("\x1B[2J");
             },
-            '\t' => todo(), // panel = panel.toggle(),
+            '\t' => {
+                if (cursor_y < todos.items.len) {
+                    cursor_y = todos.items.len;
+                } else {
+                    cursor_y = 0;
+                }
+            },
 
             else => {},
         }
