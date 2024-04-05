@@ -20,4 +20,12 @@ https://github.com/JoshuaKeegan3/zig-terminal-todo/assets/37237625/9de0bd2e-a226
 | Confirm edit | <CR>    |
 | Add new      | a       |
 
+# Todos
 
+- Add flags allowing for different modes
+    - daily todos
+    - work todos
+    - personal todos
+    - time senstive todos (add this to tmux)
+    - add a setting that searches the current directory for all mentions of todo:
+- Add this to prostgres db
